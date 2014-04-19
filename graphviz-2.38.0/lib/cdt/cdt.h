@@ -26,7 +26,7 @@
 #define _END_EXTERNS_
 #endif
 
-#ifdef WIN32
+#ifdef WIN32_DLL
 #define __EXPORT__  __declspec (dllexport)
 #define __IMPORT__	__declspec (dllimport)
 #endif

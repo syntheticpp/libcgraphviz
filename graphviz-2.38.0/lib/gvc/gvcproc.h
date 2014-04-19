@@ -16,7 +16,7 @@
 #ifndef GVCPROC_H
 #define GVCPROC_H
 
-#define extern
+#include "gvc.h"
 
 /* these are intended to be private entry points - see gvc.h for the public ones */
 

@@ -68,8 +68,8 @@ extern "C" {
 #ifndef GVC_EXPORTS
 __declspec(dllimport) lt_symlist_t lt_preloaded_symbols[];
 #else
-//__declspec(dllexport) lt_symlist_t lt_preloaded_symbols[];
-//lt_symlist_t lt_preloaded_symbols[];
+__declspec(dllexport) lt_symlist_t lt_preloaded_symbols[];
+lt_symlist_t lt_preloaded_symbols[];
 #endif
 #endif
 /*end visual studio*/

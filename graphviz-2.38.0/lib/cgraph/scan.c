@@ -21,6 +21,10 @@
 #include <errno.h>
 #include <stdlib.h>
 
+#ifdef WIN32
+#define YY_NO_UNISTD_H
+#endif
+
 /* end standard C headers. */
 
 /* flex integer type definitions */

@@ -49,9 +49,11 @@ typedef enum {
 } format_type;
 
 #ifdef WIN32 /*dependencies*/
+#ifndef NO_PRAGMA_LINKING
     #pragma comment( lib, "cgraph.lib" )
     #pragma comment( lib, "gvc.lib" )
 //    #pragma comment( lib, "ingraphs.lib" )
+#endif
 #endif
 
 #define XDOTVERSION "1.7"

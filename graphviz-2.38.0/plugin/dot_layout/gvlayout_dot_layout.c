@@ -21,12 +21,14 @@
 typedef enum { LAYOUT_DOT, } layout_type;
 
 #ifdef WIN32 /*dependencies*/
+#ifndef NO_PRAGMA_LINKING
     #pragma comment( lib, "gvc.lib" )
     #pragma comment( lib, "ingraphs.lib" )
     #pragma comment( lib, "cdt.lib" )
     #pragma comment( lib, "gvortho.lib" )
     #pragma comment( lib, "cgraph.lib" )
     #pragma comment( lib, "dotgen.lib" )
+#endif
 #endif
 
 extern void dot_layout(graph_t * g);

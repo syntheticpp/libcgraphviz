@@ -21,7 +21,9 @@ extern "C" {
 
 /*visual studio*/
 #ifdef WIN32_DLL
-#ifndef GVC_EXPORTS
+#ifdef GVC_EXPORTS
+#define extern __declspec(dllexport)
+#else
 #define extern __declspec(dllimport)
 #endif
 #endif

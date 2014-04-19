@@ -8,7 +8,7 @@
 **	Written by Kiem-Phong Vo (5/25/96)
 */
 
-#if _PACKAGE_ast
+#if defined(_PACKAGE_ast) && defined(USE_AST)
 #include	<ast.h>
 #else
 #include	<ast_common.h>

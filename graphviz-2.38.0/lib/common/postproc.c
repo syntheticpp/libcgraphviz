@@ -761,3 +761,4 @@ void place_graph_label(graph_t * g)
     for (c = 1; c <= GD_n_cluster(g); c++)
 	place_graph_label(GD_clust(g)[c]);
 }
+

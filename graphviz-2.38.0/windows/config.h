@@ -28,7 +28,7 @@
 #define DIGCOLA 1
 
 /* Define if you want on-demand plugin loading */
-#define ENABLE_LTDL 1
+//#define ENABLE_LTDL 1
 
 /* Define to 1 if you have `alloca', as a function or macro. */
 #define HAVE_ALLOCA 1
@@ -72,7 +72,7 @@
 #define HAVE_ERRNO_H 1
 
 /* Define if you have the expat library */
-#define HAVE_EXPAT 1
+//#define HAVE_EXPAT 1
 
 /* Define to 1 if you have the <expat.h> header file. */
 #define HAVE_EXPAT_H 1
@@ -198,7 +198,7 @@
 /* #undef HAVE_LASI */
 
 /* Define if either internal or external GD library is availabel */
-#define HAVE_LIBGD 1
+//#define HAVE_LIBGD 1
 
 /* Define if the LIBGEN library has the basename feature */
 /* #undef HAVE_LIBGEN */
@@ -216,7 +216,7 @@
 /* #undef HAVE_LIBXPMFORLEFTY */
 
 /* Define if you have the Z library */
-#define HAVE_LIBZ 1
+//#define HAVE_LIBZ 1
 
 /* Define to 1 if you have the <limits.h> header file. */
 #define HAVE_LIMITS_H 1
@@ -246,7 +246,7 @@
 /* #undef HAVE_NL_LANGINFO */
 
 /* Define if you have the pangocairo library */
-#define HAVE_PANGOCAIRO 1
+//#define HAVE_PANGOCAIRO 1
 
 /* Define to 1 if you have the `pango_fc_font_lock_face' function. */
 /* #undef HAVE_PANGO_FC_FONT_LOCK_FACE */

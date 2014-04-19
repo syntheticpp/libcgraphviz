@@ -182,8 +182,12 @@ struct Agdisc_s {		/* user's discipline */
 	/* default resource disciplines */
 
 /*visual studio*/
-#if defined(WIN32) && !defined(CGRAPH_EXPORTS)
+#ifdef WIN32_DLL
+#ifdef CGRAPH_EXPORTS
+#define extern __declspec(dllexport)
+#else
 #define extern __declspec(dllimport)
+#endif
 #endif
 /*end visual studio*/
 
@@ -419,7 +423,7 @@ extern agusererrf agseterrf(agusererrf);
 #	define extern  __IMPORT__
 #   endif
 #endif
-#if defined(WIN32) && !defined(CGRAPH_EXPORTS)
+#if defined(WIN32_DLL) && !defined(CGRAPH_EXPORTS)
 #define extern __declspec(dllimport)
 #endif
 
