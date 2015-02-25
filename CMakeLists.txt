@@ -180,7 +180,7 @@ set(LIB_CGRAPH
     ${SRCDIR}/lib/cgraph/write.c
     ${SRCDIR}/lib/cgraph/grammar.c)
 
-file(GLOB_RECURSE HEADERS ${CMAKE_SOURCE_DIR} *.h)
+file(GLOB_RECURSE HEADERS ${CMAKE_CURRENT_SOURCE_DIR} *.h)
 
 include_directories(
     ${SRCDIR}/lib/cgraph
